@@ -1,0 +1,25 @@
+
+void main() {
+    TRISD =  0x00;// All PORTD pins are outputs
+    PORTD = 0x00; //All lights are OFF
+    TRISC =  0x00;// All PORTC pins are outputs
+    PORTC = 0x00; //port c PİNS are OFF
+    TRISE= 0x00;
+    PORTE= 0x00;
+    while(1) {
+    PORTD = 0x01; // Red is ON
+    PORTC = 0x01; // Red is ON
+    PORTE= 0x01;
+    delay_ms(200);// Wait for 2sec
+    PORTD = 0x02; // Red is ON
+    PORTC = 0x02;
+    PORTE= 0x02;
+    delay_ms(500);// Wait for 2sec
+    PORTD = 0x04; // Red is ON
+    PORTC= 0x04;
+    PORTE= 0x04;
+    delay_ms(200);// Wait for 2sec
+
+
+                       }
+}
